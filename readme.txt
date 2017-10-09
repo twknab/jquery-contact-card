@@ -1,0 +1,1 @@
+This is a project using some jQuery functions to capture user data and retrieve it. This also allows the user to see the description as a separate request, as well as being able to return back to the original data.

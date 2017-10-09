@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact Card with jQuery</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">  <!-- normalizes CSS & HTML -->
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> <!--  grabs jquery ui css -->
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"> <!-- grabs font awesome css -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>  <!-- grabs jquery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> <!-- grabs jquery ui library (after jquery.js) -->
+	<script src="main.js"></script>
+</head>
+<body>
+	<div id="top-alert"></div>
+	<div id="column-one-half">
+		<h1>My Contacts</h1>
+		<p>Fill out the form below to add a new contact card. Click each card to learn more! Try dragging a card around once you've created it!</p>
+		<h2>Add a Contact</h2>
+		<form action="process.php" method="post">
+			<label>
+				<span id="fn-txt">First Name</span> <input type="text" name="first-name" id="first-name" placeholder="First Name">
+				<div class="alert-container"></div>
+			</label>
+			<label>
+				<span id="ln-txt">Last Name</span> <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+				<div class="alert-container"></div>
+			</label>
+			<label>
+				<span id="em-txt">Email</span> <input type="text" name="email" id="email" placeholder="Email">
+				<div class="alert-container"></div>
+			</label>
+			<div>
+				<span id="desc-txt">Custom Description</span>
+				<textarea type="description" name="description" placeholder="Enter a custom description here" id="description"></textarea>
+				<div class="alert-container"></div>
+			</div>
+			<input type="submit" value="Add Contact" id="submit-button">
+		</form>
+	</div>
+	<input type="submit" value="Show Hidden Cards" id="show-button">
+	<div id="column-one-half-last">
+	</div>
+</body>
+</html>
