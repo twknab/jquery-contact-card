@@ -54,7 +54,7 @@ p {
 form {
 	padding: 0px 30px 30px 30px;
 }
-	
+
 	form input[type="text"] {
 		width: 300px;
 		padding: 15px;
@@ -127,7 +127,7 @@ form {
 		}
 
 #column-one-half {
-	width: 528px;
+	width: 529px;
     background: ##5f5e5c;
 	background-image: url("images/zenbg-1a.png"), url("images/zenbg-2a.png");
 	background-repeat: repeat-y, repeat;
